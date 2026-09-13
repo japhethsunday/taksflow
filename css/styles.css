@@ -114,6 +114,13 @@ tr:hover td{background:var(--surface-alt)}
 .footer a{color:rgba(255,255,255,.7)}.footer a:hover{color:#fff}
 .footer-bottom{text-align:center;margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.1);font-size:.8rem}
 
+/* ─── SEARCH BAR ─── */
+.search-bar{margin-bottom:1.25rem}
+.search-bar input{width:100%;max-width:400px;padding:.6rem .75rem;border:1.5px solid var(--border);border-radius:var(--radius-sm);background:var(--surface);font-size:.9rem;transition:.15s}
+.search-bar input:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(26,86,219,.12)}
+.actions-cell{white-space:nowrap}
+.actions-cell .btn+.btn{margin-left:.25rem}
+
 /* ─── MODAL ─── */
 .modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center;z-index:200}
 .modal{background:var(--surface);border-radius:var(--radius);padding:2rem;width:100%;max-width:520px;max-height:90vh;overflow-y:auto;box-shadow:var(--shadow-lg)}
