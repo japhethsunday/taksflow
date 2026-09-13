@@ -3,7 +3,6 @@
   "framework": null,
   "outputDirectory": ".",
   "cleanUrls": true,
-  "buildCommand": "node scripts/build-config.mjs",
   "headers": [
     {
       "source": "/(.*)",
