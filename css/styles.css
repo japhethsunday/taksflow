@@ -127,6 +127,35 @@ tr:hover td{background:var(--surface-alt)}
 .modal h2{margin-bottom:1.25rem;font-size:1.25rem}
 .modal-actions{display:flex;gap:.75rem;justify-content:flex-end;margin-top:1.5rem}
 
+/* ─── GALLERY ─── */
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1rem}
+.gallery-item{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:.15s}
+.gallery-item:hover{box-shadow:var(--shadow-lg)}
+.gallery-item img{width:100%;height:200px;object-fit:cover;background:var(--surface-alt)}
+.gallery-item .gallery-caption{padding:1rem}
+.gallery-item .gallery-caption h4{margin-bottom:.25rem;font-size:.95rem}
+.gallery-item .gallery-caption p{font-size:.8rem;color:var(--text-muted)}
+.gallery-placeholder{width:100%;height:200px;background:linear-gradient(135deg,var(--primary-light),var(--accent));display:flex;align-items:center;justify-content:center;color:#fff;font-size:2rem;font-weight:700}
+
+/* ─── EVENT CARD ─── */
+.event-card{display:flex;gap:1.25rem;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;box-shadow:var(--shadow);transition:.15s}
+.event-card:hover{box-shadow:var(--shadow-lg)}
+.event-date-box{flex-shrink:0;width:64px;text-align:center;background:var(--primary);color:#fff;border-radius:var(--radius-sm);padding:.5rem .25rem}
+.event-date-box .month{font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;opacity:.9}
+.event-date-box .day{font-size:1.75rem;font-weight:700;line-height:1.2}
+.event-info{flex:1}
+.event-info h3{margin-bottom:.25rem;font-size:1.05rem}
+.event-info .event-meta{font-size:.8rem;color:var(--text-muted);margin-bottom:.5rem;display:flex;gap:1rem;flex-wrap:wrap}
+.event-info p{font-size:.9rem;color:var(--text-secondary)}
+
+/* ─── CONTACT FORM ─── */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.contact-form{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;box-shadow:var(--shadow)}
+@media(max-width:768px){.contact-grid{grid-template-columns:1fr}}
+
+/* ─── UNREAD BADGE ─── */
+.badge-count{display:inline-flex;align-items:center;justify-content:center;min-width:20px;height:20px;border-radius:10px;background:var(--danger);color:#fff;font-size:.7rem;font-weight:700;padding:0 5px;margin-left:.25rem}
+
 /* ─── EMPTY STATE ─── */
 .empty{text-align:center;padding:3rem 1rem;color:var(--text-muted)}
 .empty p{margin-bottom:1rem}
