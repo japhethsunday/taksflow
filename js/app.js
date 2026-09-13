@@ -89,7 +89,8 @@
     }
 
     if (!res.ok) {
-      throw new Error(data.message || data.error || `HTTP ${res.status}`);
+      const errMsg = data.message || (typeof data.error === "string" ? data.error : data.error?.message) || `HTTP ${res.status}`;
+      throw new Error(errMsg);
     }
     return data;
   }
