@@ -1,0 +1,10 @@
+{
+  "name": "greenwood-academy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Greenwood Academy — School website with admin dashboard, powered by CloudNivo",
+  "scripts": {
+    "start": "node server.mjs",
+    "test:e2e": "node test/e2e.mjs"
+  }
+}
