@@ -70,7 +70,7 @@
     } else {
       // project API key
       const key = window.CONFIG?.API_KEY || "";
-      if (key) headers["x-api-key"] = key;
+      if (key) headers["Authorization"] = `Bearer ${key}`;
     }
 
     const url = `${BASE}${path}`;
